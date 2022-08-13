@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">My Gallery</h1>
+<h1 align="center">Chirans Interior Consultant</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I" target="_blank">Devchallenges.io</a>.
