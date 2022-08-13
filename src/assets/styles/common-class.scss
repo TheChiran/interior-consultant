@@ -1,0 +1,15 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-opened{
+    display: block !important;
+    top: 0 !important;
+}
+
+.menu-closed{
+    display: none;
+    top: -100%;
+}
