@@ -39,7 +39,7 @@ body {
     width: 100%;
     height: 100vh;
     z-index: 2;
-    top: -100%;
+    top: -120%;
     right: 0;
     transition: 0.5S;
     background: #181719;
@@ -48,11 +48,6 @@ body {
         display: block;
 
         .cross{
-            // position: relative;
-            // top: 0;
-            // right: 0;
-            // width: fit-content;
-
             &::before{
                 content: "";
                 width: 22px;
@@ -60,7 +55,7 @@ body {
                 background-color: #FFFFFF;
                 position: absolute;
                 right: 20px;
-                top: 22px;
+                top: 35px;
                 transform: rotate(-45deg);
             }
 
@@ -71,7 +66,7 @@ body {
                 background-color: #FFFFFF;
                 position: absolute;
                 right: 20px;
-                top: 22px;
+                top: 35px;
                 transform: rotate(45deg);
             }
         }
@@ -159,6 +154,11 @@ header {
             line-height: 60px;
             color: #FFFFFF;
             margin: 0;
+
+            @media(max-width: 426px){
+                font-size: 36px;
+                line-height: 46px;
+            }
         }
 
         .__content{
@@ -167,6 +167,12 @@ header {
             line-height: 30px;
             color: #FFFFFF;
             margin: 0;
+
+            @media(max-width: 426px){
+                font-size: 14px;
+                line-height: 18px;
+                max-width: 250px;
+            }
         }
 
         .read-more{
@@ -187,10 +193,16 @@ header {
                     width: 35px;
                 }
             }
+
+            @media(max-width: 769px){
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
 
         @media(max-width: 769px){
             grid-column: 1 / -1;
+            row-gap: 25px;
         }
     }
 
@@ -244,6 +256,11 @@ header {
                         font-size: 14px;
                         line-height: 18px;
                         color: #FFFFFF;
+
+                        @media(max-width: 769px){
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
                     }
 
                     .designation{
@@ -252,6 +269,11 @@ header {
                         font-size: 12px;
                         line-height: 16px;
                         color: #828282;
+
+                        @media(max-width: 769px){
+                            font-size: 10px;
+                            line-height: 12px;
+                        }
                     }
                 }
 
@@ -262,6 +284,16 @@ header {
                     line-height: 30px;
                     color: #FFFFFF;
                     margin: 0;
+
+                    @media(max-width: 769px){
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                }
+
+                @media(max-width: 769px){
+                    padding: 12px 22px 24px 22px;
+                    row-gap: 18px;
                 }
             }
         }
@@ -275,6 +307,8 @@ header {
         display: flex;
         grid-template-columns: unset;
         flex-direction: column;
+        margin-top: 38px;
+        row-gap: 38px;
     }
 }
 
@@ -283,6 +317,10 @@ footer{
     width: 100%;
     grid-column: 1 / -1;
     margin-top: 160px;
+
+    @media(max-width: 769px){
+        margin-top: 80px;
+    }
 }
 
 footer p,a{
